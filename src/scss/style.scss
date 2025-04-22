@@ -213,6 +213,128 @@ $accent: #FCBB08;
   }
 }
 
+
+.portfolio {
+  padding: 140px 0 165px;
+  &__top {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__filter-btn {
+    margin-right: 65px;
+  }
+  &__btn {
+    padding: 0 5px 5px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: $default-light;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  &__btn:not(:last-child) {
+    margin-right: 25px;
+  }
+  &__content {
+    margin-bottom: 72px;
+    column-count: 4;
+    column-gap: 22px;
+  }
+  &__item {
+    margin-bottom: 24px;
+    position: relative;
+    &:hover {
+      .portfolio__item-link {
+        opacity: 1;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__item-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @extend %os-light;
+    letter-spacing: 1.5px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #666666;
+    border: 12px solid #666666;
+    opacity: 0;
+    transition: all .3s ease-out;
+  }
+  &__add {
+    margin-bottom: 130px;
+    padding: 42px 15px;
+    display: block;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: #f2f2f2;
+  }
+  &__video {
+    margin-bottom: 165px;
+    background-image: url("../images/video.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 325px;
+  }
+  &__video-link{
+    height: 100px;
+    width: 100px;
+  }
+  &__numbers {
+    display: flex;
+    justify-content: space-around;
+  }
+  &__numbers-item {
+    margin-bottom: 10px;
+    text-align: center;
+    @extend %m-bold;
+    font-size: 60px;
+    color: #212121;
+    span {
+      font-size: 14px;
+      display: block;
+      color: $default;
+    }
+  }
+  .mixitup-control-active {
+    border-bottom: 1px solid #FCBB08;
+  }
+}
+
+
+.blockquote {
+  max-width: 650px;
+  margin: 0 auto 148px;
+  text-align: center;
+  @extend %mw-light;
+  font-size: 18px;
+  color: #212121;
+  &__author {
+    display: block;
+    padding-top: 50px;
+    font-size: 14px;
+    color: #9E9E9E;
+  }
+}
+
+
 // .footer {
 
 // }

@@ -21,6 +21,8 @@
     "sass": "^1.80.3"
   },
   "dependencies": {
-    "jquery": "^3.7.1"
+    "@fancyapps/ui": "^5.0.36",
+    "jquery": "^3.7.1",
+    "mixitup": "^3.3.2"
   }
 }
