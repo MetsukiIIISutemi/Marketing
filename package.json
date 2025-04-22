@@ -23,6 +23,7 @@
   "dependencies": {
     "@fancyapps/ui": "^5.0.36",
     "jquery": "^3.7.1",
-    "mixitup": "^3.3.2"
+    "mixitup": "^3.3.2",
+    "slick-slider": "^1.8.2"
   }
 }
