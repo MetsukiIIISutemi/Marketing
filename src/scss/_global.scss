@@ -1,9 +1,8 @@
 body {
-  // background-color: $black;
-  // @extend %semibold;
-  font-size: 16px;
+  @extend %os-light;
+  font-size: 14px;
   line-height: 1.5;
-  // color: $white;
+  color: $default;
 }
 
 .container {
@@ -13,8 +12,8 @@ body {
 }
 
 a {
-  // @extend %semibold;
-  // color: $white;
+  @extend %r-bold;
+  color: $default;
 }
 
 button {
@@ -22,11 +21,23 @@ button {
   cursor: pointer;
 }
 
-section{
-  padding: 100px 0;
-}
 
 .title {
-  font-size: 120px;
-  line-height: 1;
+  position: relative;
+  align-self: flex-start;
+  margin-bottom: 50px;
+  padding-bottom: 18px;
+  @extend %m-bold;
+  color: #242121;
+  font-size: 60px;
+  line-height: 1.5;
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: $accent;
+  }
 }

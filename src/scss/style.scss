@@ -1,21 +1,100 @@
-$white: #f8f8f8;
-$black: #000000;
+$default: #373A39;
+$default-light: #333333;
+$accent: #FCBB08;
 
 
-// %light {
-//   font-family: 'AnekMalayalam-Light', sans-serif;
-//   font-weight: 300;
-// }
+%os-light {
+  font-family: "OpenSans-Light", sans-serif;
+  font-weight: 300;
+}
+
+%m-bold {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%r-bold {
+  font-family: "Raleway-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%mw-light {
+  font-family: "Merriweather-LightItalic", sans-serif;
+  font-weight: 300;
+}
 
 
-// .header{
+.header{
+  &__top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+  }
+  &__top-inner {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    background-image: url('../images/header-bg.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  &__content-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+  &__title {
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding-top: 120px;
+    font-size: 72px;
+    color: #FFFFFF;
+  }
+  &__subtitle {
+    margin-bottom: auto;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: $accent;
+  }
+  &__icon {
+    margin-bottom: 60px;
+  }
+}
 
-// }
 
-
-// .menu{
-
-// }
+.menu{
+  a.active {
+    border-bottom: 1px solid $accent;
+  }
+  &__btn {
+    display: none;
+  }
+  &__list {
+    display: flex;
+  }
+  &__list-item:not(:last-child) {
+    margin-right: 32px;
+  }
+  &__list-link {
+    padding: 0 9px 9px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    transition: border-bottom .5s ease-out;
+    &:hover {
+      border-bottom: 1px solid $accent;
+    }
+  }
+}
 
 
 // .footer {
