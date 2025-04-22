@@ -97,6 +97,122 @@ $accent: #FCBB08;
 }
 
 
+.about {
+  padding: 150px 0;
+  background-color: #F6F8FA;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text p {
+    margin-bottom: 16px;
+    max-width: 770px;
+  }
+}
+
+
+.expertise {
+  padding: 140px 0;
+  &__title {
+    margin-bottom: 90px;
+  }
+  &__inner {
+    margin-bottom: 110px;
+    display: flex;
+  }
+  &__info {
+    margin-right: 30px;
+    margin-top: 10px;
+    width: 370px;
+    flex: none;
+  }
+  &__info-item {
+    position: relative;
+    padding: 2px 0 28px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1D1D1D;
+    border-top: 2px solid #1D1D1D;
+  }
+  &__info-item {
+    span {
+      position: absolute;
+      display: block;
+      margin-right: 7px;
+      right: 0;
+      top: 0;
+    }
+    span::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background-color: #f0f0f0;
+      right: -7px;
+      top: -2px;
+      width: 100%;
+    }
+  }
+  &__text p {
+    margin-bottom: 25px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    padding-left: 85px;
+    width: 370px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+    }
+  }
+  &__item--design::before {
+    background-image: url("../images/icons/design-logo.svg");
+  }
+  &__item--dev::before {
+    background-image: url("../images/icons/development-logo.svg");
+  }
+  &__item--marketing::before {
+    background-image: url("../images/icons/marketing-logo.svg");
+  }
+  &__item-title {
+    margin-bottom: 14px;
+    letter-spacing: 4px;
+    color: $default-light;
+    text-transform: uppercase;
+  }
+  &__item-text {
+    color: #777777;
+  }
+}
+
+
+.magic {
+  background-color: #ffffff;
+  background-image: url('../images/magic-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: left 70%;
+  &__inner {
+    padding: 100px 0 190px;
+    margin-left: auto;
+    max-width: 470px;
+  }
+  &__title {
+    margin-bottom: 68px;
+  }
+  &__text p {
+    margin-bottom: 25px;
+  }
+}
+
 // .footer {
 
 // }
