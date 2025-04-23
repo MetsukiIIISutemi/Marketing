@@ -1958,6 +1958,117 @@ a {
     align-items: center;
 }
 
+.connection {
+    padding: 145px 0 160px;
+    background-image: url("../images/map.jpg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: right 65%;
+}
+
+.connection__title {
+    margin-bottom: 80px;
+}
+
+.form {
+    max-width: 570px;
+}
+
+.form input,
+.form textarea {
+    margin-bottom: 15px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #373A39;
+}
+
+.form textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+.form input::-moz-placeholder, .form textarea::-moz-placeholder {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.form button {
+    margin-top: 40px;
+    padding: 15px 70px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    background-color: #212121;
+    cursor: pointer;
+}
+
+.footer__top {
+    padding: 110px 0 60px;
+    background-color: #333333;
+    text-align: center;
+}
+
+.footer__logo {
+    margin-bottom: 70px;
+    padding: 0 35px 4px;
+    display: inline-block;
+    border-bottom: 2px solid #FCBB08;
+    overflow: hidden;
+}
+
+.footer ul.footer__social {
+    margin-bottom: 65px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__social-list {
+    padding: 0 15px;
+}
+
+.footer__social-link {
+    letter-spacing: 4px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.footer__contact {
+    margin-bottom: 60px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.footer__contact a {
+    margin-bottom: 10px 0;
+    display: block;
+    color: #FFFFFF;
+}
+
+.footer__copy {
+    padding: 40px 10px;
+    text-align: center;
+    color: #CCCCCC;
+    background-color: #2A2C2B;
+}
+
+.go-top {
+    display: inline-block;
+}
+
 @font-face {
     font-family: "Montserrat-Bold";
   font-weight: 700;
