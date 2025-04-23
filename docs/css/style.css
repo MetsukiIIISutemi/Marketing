@@ -1454,7 +1454,7 @@ body, .portfolio__item-link {
     font-weight: 300;
 }
 
-.title, .portfolio__numbers-item {
+.title, .team__name, .portfolio__numbers-item {
     font-family: "Montserrat-Bold", sans-serif;
     font-weight: 700;
 }
@@ -1876,6 +1876,86 @@ a {
 
 .slider .slick-next {
     right: -95px;
+}
+
+.team {
+    padding: 120px 0;
+}
+
+.team__title {
+    margin-bottom: 100px;
+}
+
+.team__items {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.team__name {
+    padding: 35px 0 12px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.pricing {
+    padding: 145px 0 160px;
+    background-color: #F6F8FA;
+}
+
+.pricing__title {
+    margin-bottom: 90px;
+}
+
+.pricing__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing ul.pricing__item {
+    padding: 24px 25px 50px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 370px;
+}
+
+.pricing__item li {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #212121;
+}
+
+.pricing__item .pricing__item-name {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.pricing__item .pricing__item-num {
+    margin-bottom: 50px;
+    font-size: 80px;
+}
+
+.pricing__item-num sup {
+    font-size: 40px;
+    line-height: 54px;
+}
+
+.pricing__item-link {
+    display: block;
+    margin-top: 70px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #212121;
+}
+
+.clients {
+    padding: 70px 0 95px;
+}
+
+.clients__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @font-face {
