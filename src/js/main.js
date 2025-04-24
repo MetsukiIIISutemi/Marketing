@@ -1,5 +1,6 @@
 $(function () {
 
+  //scroll and active
   window.addEventListener('scroll', () => {
     let scrollDistance = window.scrollY;
     document.querySelectorAll('.section').forEach((el, i) => {
@@ -10,6 +11,30 @@ $(function () {
           }
         });
         document.querySelectorAll('.menu li')[i].querySelector('a').classList.add('active');
+
+        //animation of progressbar
+        $(".expertise__info-item").each(function () {
+          let span = $(this).find('span');
+          let p = $(this).find('p');
+      
+          span.animate(
+            {
+              width: span.attr("data-progress") + "%",
+            },
+            2000
+          );
+      
+          p.animate(
+            {
+              width: span.attr("data-progress") + "%",
+              opacity: 1
+            },
+            2000
+          );
+      
+          p.text(span.attr("data-progress") + "%")
+        });
+
       }
     });
   });
@@ -23,13 +48,13 @@ $(function () {
   });
 
 
-
- 
-
-
+  //slider
   $('.slider__blog-inner').slick({
     dots: true,
-
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1500,
+    infinite: true,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/arrow-left.svg"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/arrow-right.svg"></button>',
     responsive: [
@@ -43,6 +68,7 @@ $(function () {
   });
 
 
+  //animation
   AOS.init({
     disable: function () {
       let maxWidth = 1200;
@@ -55,6 +81,7 @@ $(function () {
     once: true
   });
 
+  //plugins initialization
   Fancybox.bind("[data-fancybox]", {
   });
 
