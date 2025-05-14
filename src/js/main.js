@@ -1,5 +1,11 @@
 $(function () {
 
+
+  $('.menu__btn').on('click', function () {
+    $('.header__top-inner').toggleClass('header__top-inner--active');
+  });
+
+
   //scroll and active
   window.addEventListener('scroll', () => {
     let scrollDistance = window.scrollY;
