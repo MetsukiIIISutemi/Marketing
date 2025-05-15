@@ -2501,7 +2501,6 @@ a {
 }
 
 .about {
-    padding: 150px 0;
     background-color: #F6F8FA;
 }
 
@@ -2513,10 +2512,6 @@ a {
 .about__text p {
     margin-bottom: 16px;
     max-width: 770px;
-}
-
-.expertise {
-    padding: 140px 0;
 }
 
 .expertise__title {
@@ -2644,10 +2639,6 @@ a {
 
 .magic__text p {
     margin-bottom: 25px;
-}
-
-.portfolio {
-    padding: 140px 0 165px;
 }
 
 .portfolio__top {
@@ -2781,7 +2772,6 @@ a {
 
 .slider {
     background-color: #f8f6fa;
-    padding: 115px 0;
 }
 
 .slider__blog-item {
@@ -2845,10 +2835,6 @@ a {
     right: -95px;
 }
 
-.team {
-    padding: 120px 0;
-}
-
 .team__title {
     margin-bottom: 100px;
 }
@@ -2866,7 +2852,6 @@ a {
 }
 
 .pricing {
-    padding: 145px 0 160px;
     background-color: #F6F8FA;
 }
 
@@ -2886,6 +2871,11 @@ a {
     width: 370px;
 }
 
+.pricing__item-num {
+    margin-bottom: 50px;
+    font-size: 80px !important;
+}
+
 .pricing__item li {
     margin-bottom: 30px;
     font-size: 16px;
@@ -2895,11 +2885,6 @@ a {
 .pricing__item .pricing__item-name {
     margin-bottom: 8px;
     text-align: left;
-}
-
-.pricing__item .pricing__item-num {
-    margin-bottom: 50px;
-    font-size: 80px;
 }
 
 .pricing__item-num sup {
@@ -2915,10 +2900,6 @@ a {
     color: #212121;
 }
 
-.clients {
-    padding: 70px 0 95px;
-}
-
 .clients__list {
     display: flex;
     justify-content: space-between;
@@ -2926,7 +2907,6 @@ a {
 }
 
 .connection {
-    padding: 145px 0 160px;
     background-image: url("../images/map.jpg");
     background-repeat: no-repeat;
     background-size: 40%;
@@ -3089,6 +3069,10 @@ button {
     cursor: pointer;
 }
 
+.section {
+    padding: 120px 0;
+}
+
 .title {
     position: relative;
     align-self: flex-start;
@@ -3114,16 +3098,10 @@ button {
         padding: 50px 0;
     }
 
-    .slick-prev {
-        left: 0;
-    }
-
-    .slick-next {
-        right: 0;
-    }
-
-    .slider__blog-item {
-        padding: 120px 60px;
+    .slick-prev,
+  .slick-next,
+  .slick-arrow {
+        display: none !important;
     }
 
     ul.slick-dots {
@@ -3145,6 +3123,10 @@ button {
 }
 
 @media (max-width: 1200px) {
+    .section {
+        padding: 80px 0;
+    }
+
     .portfolio__filter-btn {
         margin-right: 0;
     }
@@ -3156,9 +3138,7 @@ button {
         column-gap: 20px;
     }
 
-    .about,
-  .expertise,
-  .portfolio,
+    .expertise,
   .slider,
   .team,
   .pricing,
@@ -3261,6 +3241,10 @@ button {
         margin: 0 auto 70px;
     }
 
+    .team__name {
+        padding: 15px 0 10px;
+    }
+
     .connection {
         background-image: none;
     }
@@ -3289,6 +3273,10 @@ button {
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .section {
+        padding: 60px 0;
+    }
+
     .header__top-inner path, .header__top-inner rect {
         transition: all 0.5s ease-out;
     }
@@ -3445,9 +3433,29 @@ button {
         width: 100%;
     }
 
+    .pricing__item {
+        padding: 20px !important;
+    }
+
+    .pricing__item li {
+        margin-bottom: 10px;
+    }
+
+    .pricing__item-num {
+        font-size: 50px !important;
+    }
+
+    .pricing__item-link {
+        margin-top: 30px;
+    }
+
     .clients__list {
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+
+    .clients__list img {
+        width: 100px;
     }
 
     .clients__list li {
@@ -3456,13 +3464,13 @@ button {
 }
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+    .section {
+        padding: 40px 0;
+    }
+
     .expertise__item {
         padding-left: 0;
         padding-top: 60px;
-    }
-
-    .portfolio__numbers-item {
-        width: 100%;
     }
 
     .footer__social-list {

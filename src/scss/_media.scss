@@ -19,16 +19,10 @@ $maxWidth: 1200;
     padding: 50px 0;
   }
 
-  .slick-prev {
-    left: 0;
-  }
-
-  .slick-next {
-    right: 0;
-  }
-
-  .slider__blog-item {
-    padding: 120px 60px;
+  .slick-prev,
+  .slick-next,
+  .slick-arrow {
+    display: none !important;
   }
 
   ul.slick-dots {
@@ -44,6 +38,10 @@ $maxWidth: 1200;
     @include adaptiv-font(60, 24);
   }
 
+  .section{
+    padding: 80px 0;
+  }
+
   .portfolio__filter-btn {
     margin-right: 0;
   }
@@ -54,9 +52,7 @@ $maxWidth: 1200;
     column-gap: 20px;
   }
 
-  .about,
   .expertise,
-  .portfolio,
   .slider,
   .team,
   .pricing,
@@ -145,6 +141,12 @@ $maxWidth: 1200;
     margin: 0 auto 70px;
   }
 
+  .team{
+    &__name{
+      padding: 15px 0 10px;
+    }
+  }
+
   .connection {
     background-image: none;
   }
@@ -174,6 +176,10 @@ $maxWidth: 1200;
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+  .section{
+    padding: 60px 0;
+  }
+
   .header {
     &__top-inner path,
     &__top-inner rect {
@@ -303,12 +309,28 @@ $maxWidth: 1200;
       max-width: 500px;
       width: 100%;
     }
+    &__item{
+      padding: 20px !important;
+      li{
+        margin-bottom: 10px;
+      }
+    }
+    &__item-num{
+      font-size: 50px !important;
+    }
+    &__item-link{
+      margin-top: 30px;
+    }
+
   }
 
   .clients {
     &__list {
       justify-content: space-around;
       flex-wrap: wrap;
+      img{
+        width: 100px;
+      }
     }
     &__list li {
       margin-bottom: 25px;
@@ -319,13 +341,13 @@ $maxWidth: 1200;
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
+  .section{
+    padding: 40px 0;
+  }
+
   .expertise__item {
     padding-left: 0;
     padding-top: 60px;
-  }
-
-  .portfolio__numbers-item {
-    width: 100%;
   }
 
   .footer__social-list {

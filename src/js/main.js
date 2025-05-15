@@ -18,37 +18,43 @@ $(function () {
         });
         document.querySelectorAll('.menu li')[i].querySelector('a').classList.add('active');
 
-        //animation of progressbar
-        $(".expertise__info-item").each(function () {
-          let span = $(this).find('span');
-          let p = $(this).find('p');
-      
-          span.animate(
-            {
-              width: span.attr("data-progress") + "%",
-            },
-            2000
-          );
-      
-          p.animate(
-            {
-              width: span.attr("data-progress") + "%",
-              opacity: 1
-            },
-            2000
-          );
-      
-          p.text(span.attr("data-progress") + "%")
-        });
-
       }
     });
+
+    //animation of progressbar
+
+    $(".expertise__info-item").each(function () {
+      let span = $(this).find('span');
+      let p = $(this).find('p');
+  
+      span.animate(
+        {
+          width: span.attr("data-progress") + "%",
+        },
+        3000
+      );
+  
+      p.animate(
+        {
+          width: span.attr("data-progress") + "%",
+          opacity: 1
+        },
+        3000
+      );
+  
+      p.text(span.attr("data-progress") + "%")
+    });
+  });
+
+
+  $('.go-top').on('click', function () {
+    $("html, body").animate({ scrollTop: 0 }, 1200);
   });
 
 
   $(".menu a").on("click", function (event) {
     event.preventDefault();
-    var id = $(this).attr('href'),
+    let id = $(this).attr('href'),
       top = $(id).offset().top;
     $('body,html').animate({ scrollTop: top }, 1200);
   });

@@ -98,7 +98,6 @@ $accent: #FCBB08;
 
 
 .about {
-  padding: 150px 0;
   background-color: #F6F8FA;
   &__inner {
     display: flex;
@@ -112,7 +111,6 @@ $accent: #FCBB08;
 
 
 .expertise {
-  padding: 140px 0;
   &__title {
     margin-bottom: 90px;
   }
@@ -214,46 +212,6 @@ $accent: #FCBB08;
 }
 
 
-
-
-
-
-// .animated-progress {
-//   width: 300px;
-//   height: 2px;
-//   margin: 20px 10px;
-//   // overflow: hidden;
-//   position: relative;
-//   background-color: #ccc;
-// }
-
-// .animated-progress span {
-//   height: 100%;
-//   display: block;
-//   width: 0;
-//   color: rgb(255, 251, 251);
-//   line-height: 30px;
-//   position: absolute;
-//   text-align: end;
-//   // padding-right: 5px;
-//   background-color: black;
-// }
-
-// .animated-progress__text{
-//   // padding-left: 70px;
-//   opacity: 0;
-//   display: block;
-//   width: 30px;
-//   height: 20px;
-//   position: absolute;
-//   color: red; 
-//   text-align: end;
-//   top: 0;
-//   z-index: 100;
-// }
-
-
-
 .magic {
   background-color: #ffffff;
   background-image: url('../images/magic-bg.jpg');
@@ -275,7 +233,6 @@ $accent: #FCBB08;
 
 
 .portfolio {
-  padding: 140px 0 165px;
   &__top {
     margin-bottom: 100px;
     display: flex;
@@ -397,7 +354,6 @@ $accent: #FCBB08;
 
 .slider {
   background-color: #f8f6fa;
-  padding: 115px 0;
   &__blog-item {
     padding: 190px 0;
   }
@@ -453,7 +409,6 @@ $accent: #FCBB08;
 
 
 .team {
-  padding: 120px 0;
   &__title {
     margin-bottom: 100px;
   }
@@ -472,7 +427,6 @@ $accent: #FCBB08;
 
 
 .pricing {
-  padding: 145px 0 160px;
   background-color: #F6F8FA;
   &__title {
     margin-bottom: 90px;
@@ -487,6 +441,10 @@ $accent: #FCBB08;
     text-align: center;
     width: 370px;
   }
+  &__item-num {
+    margin-bottom: 50px;
+    font-size: 80px !important;
+  }
   &__item {
     li {
       margin-bottom: 30px;
@@ -497,11 +455,8 @@ $accent: #FCBB08;
       margin-bottom: 8px;
       text-align: left;
     }
-    & .pricing__item-num {
-      margin-bottom: 50px;
-      font-size: 80px;
-    }
   }
+ 
   &__item-num sup {
     font-size: 40px;
     line-height: 54px;
@@ -517,7 +472,6 @@ $accent: #FCBB08;
 
 
 .clients {
-  padding: 70px 0 95px;
   &__list {
     display: flex;
     justify-content: space-between;
@@ -527,7 +481,6 @@ $accent: #FCBB08;
 
 
 .connection {
-  padding: 145px 0 160px;
   background-image: url('../images/map.jpg');
   background-repeat: no-repeat;
   background-size: 40%;
