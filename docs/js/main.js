@@ -13780,7 +13780,7 @@ $(function () {
   //scroll and active
   window.addEventListener('scroll', () => {
     let scrollDistance = window.scrollY;
-    document.querySelectorAll('.section').forEach((el, i) => {
+    document.querySelectorAll('.nav').forEach((el, i) => {
       if (el.offsetTop - document.querySelector('.menu').clientHeight <= scrollDistance) {
         document.querySelectorAll('.menu a').forEach((el) => {
           if (el.classList.contains('active')) {
@@ -13788,34 +13788,34 @@ $(function () {
           }
         });
         document.querySelectorAll('.menu li')[i].querySelector('a').classList.add('active');
-
       }
     });
-
-    //animation of progressbar
-
-    $(".expertise__info-item").each(function () {
-      let span = $(this).find('span');
-      let p = $(this).find('p');
-  
-      span.animate(
-        {
-          width: span.attr("data-progress") + "%",
-        },
-        3000
-      );
-  
-      p.animate(
-        {
-          width: span.attr("data-progress") + "%",
-          opacity: 1
-        },
-        3000
-      );
-  
-      p.text(span.attr("data-progress") + "%")
-    });
   });
+
+
+  //animation of progressbar
+  $(".expertise__info-item").each(function () {
+    let span = $(this).find('span');
+    let p = $(this).find('p');
+
+    span.animate(
+      {
+        width: span.attr("data-progress") + "%",
+      },
+      5000
+    );
+
+    p.animate(
+      {
+        width: span.attr("data-progress") + "%",
+        opacity: 1
+      },
+      5000
+    );
+  
+    p.text(span.attr("data-progress") + "%")
+  });
+
 
 
   $('.go-top').on('click', function () {
