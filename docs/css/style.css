@@ -2493,6 +2493,7 @@ a {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
+    border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s ease-out;
 }
 
@@ -2642,7 +2643,7 @@ a {
 }
 
 .portfolio__top {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2673,6 +2674,7 @@ a {
     column-count: 4;
     -moz-column-gap: 22px;
     column-gap: 22px;
+    overflow: hidden;
 }
 
 .portfolio__item {
@@ -2700,8 +2702,8 @@ a {
     letter-spacing: 1.5px;
     color: #FFFFFF;
     text-transform: uppercase;
-    background-color: #666666;
-    border: 12px solid #666666;
+    background-color: #FCBB08;
+    border: 12px solid #FCBB08;
     opacity: 0;
     transition: all 0.3s ease-out;
 }

@@ -89,6 +89,7 @@ $accent: #FCBB08;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
+    border-bottom: 1px solid transparent;
     transition: border-bottom .5s ease-out;
     &:hover {
       border-bottom: 1px solid $accent;
@@ -234,7 +235,7 @@ $accent: #FCBB08;
 
 .portfolio {
   &__top {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -259,6 +260,7 @@ $accent: #FCBB08;
     margin-bottom: 72px;
     column-count: 4;
     column-gap: 22px;
+    overflow: hidden;
   }
   &__item {
     margin-bottom: 24px;
@@ -285,8 +287,8 @@ $accent: #FCBB08;
     letter-spacing: 1.5px;
     color: #FFFFFF;
     text-transform: uppercase;
-    background-color: #666666;
-    border: 12px solid #666666;
+    background-color: $accent;
+    border: 12px solid $accent;
     opacity: 0;
     transition: all .3s ease-out;
   }
@@ -570,6 +572,7 @@ $accent: #FCBB08;
     background-color: #2A2C2B;
   }
 }
+
 
 .go-top {
   display: inline-block;
